@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wedding Invitation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero" id="hero">
+  <div class="hero-text">
+    <p id="tagline"></p>
+    <h1 id="names"></h1>
+    <p id="when"></p>
+    <div id="count" class="count" aria-live="off"></div>
+  </div>
+  <button id="musicBtn" class="music" aria-label="Toggle music" hidden>Play music</button>
+</header>
+<main>
+  <section id="story"><h2>Our story</h2><div class="story-list" id="storyList"></div></section>
+  <section id="events"><h2>Celebrations</h2><div class="events" id="eventList"></div></section>
+  <section id="gallery"><h2>Gallery</h2><div class="grid" id="grid"></div></section>
+  <section id="rsvp"><h2>Will you join us?</h2>
+    <p id="rsvpNote"></p>
+    <form id="rsvpForm">
+      <label>Your name <input name="name" required></label>
+      <label>Guests attending <input name="guests" type="number" min="1" value="1" required></label>
+      <label>Attending
+        <select name="going"><option>Yes, we'll be there</option><option>Sorry, we can't make it</option></select>
+      </label>
+      <button type="submit">Send RSVP on WhatsApp</button>
+    </form>
+  </section>
+</main>
+<footer id="foot"></footer>
+<dialog id="lightbox"><img alt=""></dialog>
+<script type="module" src="app.js"></script>
+</body>
+</html>
