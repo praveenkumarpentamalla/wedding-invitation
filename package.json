@@ -4,7 +4,6 @@
   "type": "module",
   "scripts": {
     "build": "node build.js",
-    // "preview": "npx serve dist/$npm_config_client"
     "preview": "npx serve dist"
   }
 }
